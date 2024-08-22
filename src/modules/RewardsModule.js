@@ -1,10 +1,10 @@
-// modules/RewardsModule.js
+
 import React, { useEffect, useState } from 'react';
 import UserMonthlyRewardsTable from '../components/UserMonthlyRewardsTable';
 import TotalRewardsTable from '../components/TotalRewardsTable';
 import TransactionsTable from '../components/TransactionsTable';
 import { calculateRewardPoints } from '../utils/RewardPointsCalculator';
-import { fetchTransactions } from '../sevice/TransactionService';
+import { fetchTransactions } from '../service/TransactionService';
 import { logger } from "../logger";
 
 const RewardsModule = () => {

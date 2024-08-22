@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TotalRewardsTable from '../components/TotalRewardsTable'; // Adjust the import path if necessary
+import TotalRewardsTable from '../components/TotalRewardsTable'; 
 
 test('renders TotalRewardsTable with provided data', () => {
   const testData = [

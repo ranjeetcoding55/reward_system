@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import '../styles/styles.css';
-
 const TotalRewardsTable = ({ totalRewardsData = [] }) => {
   return (
     <div className="table-container">

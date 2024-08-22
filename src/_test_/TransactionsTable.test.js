@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import TransactionsTable from '../components/TransactionsTable'; // Update the path as needed
+import TransactionsTable from '../components/TransactionsTable'; 
 
 describe('TransactionTable', () => {
   it('renders TransactionTable with provided data', () => {

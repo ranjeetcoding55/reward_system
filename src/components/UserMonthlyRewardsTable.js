@@ -1,13 +1,5 @@
-// components/UserMonthlyRewardsTable.js
-import React from 'react';
-//import '../styles/styles.css';
+import React from "react";
 
-/**
- * Renders a table of user monthly rewards.
- * 
- * @param {Array} monthlyData - Array of monthly reward data.
- * @returns {JSX.Element} - The rendered table of user monthly rewards.
- */
 const UserMonthlyRewardsTable = ({ monthlyData }) => {
   return (
     <div className="table-container">
@@ -30,7 +22,9 @@ const UserMonthlyRewardsTable = ({ monthlyData }) => {
               {monthData.transactions.map((transaction) => {
                 // Convert price to number and handle errors
                 const price = parseFloat(transaction.price);
-                const formattedPrice = isNaN(price) ? 'Invalid Price' : `$${price.toFixed(2)}`;
+                const formattedPrice = isNaN(price)
+                  ? "Invalid Price"
+                  : `$${price.toFixed(2)}`;
 
                 return (
                   <tr key={transaction.transactionId}>
@@ -38,7 +32,9 @@ const UserMonthlyRewardsTable = ({ monthlyData }) => {
                     <td>{transaction.customerName}</td>
                     <td>{transaction.transactionId}</td>
                     <td>{formattedPrice}</td>
-                    <td>{new Date(transaction.purchaseDate).toLocaleDateString()}</td>
+                    <td>
+                      {new Date(transaction.purchaseDate).toLocaleDateString()}
+                    </td>
                     <td>{transaction.year}</td>
                     <td>{transaction.rewardPoints}</td>
                   </tr>
